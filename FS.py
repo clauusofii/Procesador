@@ -284,9 +284,9 @@ with right:
     st.markdown("""
     <div class="hero">
         <div class="hero-title">Procesador de Demanda Insatisfecha</div>
-        <div class="hero-subtitle">Fuga involuntaria · Food Service · Todos los sectores</div>
+        <div class="hero-subtitle">No Recepcionado · Food Service · Todos los sectores</div>
         <div class="hero-text">
-            Identifica pedidos solicitados y despachados, pero no facturados. Es decir, detecta pedidos que no llegaron al cliente luego de haberlos solicitado.
+            Identifica pedidos no recepcionados
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -297,7 +297,7 @@ st.markdown("""
 <div class="card">
     <b>Instrucciones:</b><br>
     Sube la data descargada desde Power BI <b>filtrada por el día anterior</b>.
-    La aplicación identificará automáticamente los pedidos con fuga involuntaria y generará el listado para su reagendamiento.
+    La aplicación identificará automáticamente los pedidos. 
 </div>
 """, unsafe_allow_html=True)
 
