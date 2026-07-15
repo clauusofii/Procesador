@@ -499,10 +499,10 @@ if archivo is not None:
         col1, col2, col3, col4 = st.columns(4)
 
         metricas = [
-            ("📄", len(df_export), "Data original", "Registros exportados desde panel de No Facturados"),
-            ("👥", len(df_ty_gc), "Registros Clientes Foodservice", "Filtro por tipo de cliente"),
-            ("🚨", cajas_cecinas, "Cajas de cecinas", "Cecinas no facturadas"),
-            ("📞", cajas_reagendar, "Cajas para Re agendar", "Cajas no entregadas en despachos que incluían cecinas"),
+            ("📄", len(df_export), "Data original", "SKU's no facturados de todos los sectores y clientes el día n-1"),
+            ("👥", len(df_ty_gc), "Registros Clientes Foodservice", "SKU's no facturados de clientes Food Service"),
+            ("📞", cajas_reagendar, "Cajas para Re agendar", "SKU's no entregados en despachos que incluían cecinas"),
+            ("🚨", cajas_cecinas, "Cajas de cecinas", "SKU's de cecinas no facturadas"),
         ]
 
         for col, (icono, numero, label, desc) in zip([col1, col2, col3, col4], metricas):
